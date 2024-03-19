@@ -12,4 +12,36 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/contact',
+    [
+        'controller' => 'index',
+        'action'     => 'contact',
+    ]
+);
+
+$router->add(
+    '/post',
+    [
+        'controller' => 'index',
+        'action'     => 'post',
+    ]
+);
+
+$router->add(
+    '/search',
+    [
+        'controller' => 'index',
+        'action'     => 'search',
+    ]
+);
+
+$router->add(
+    '/category',
+    [
+        'controller' => 'index',
+        'action'     => 'category',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
