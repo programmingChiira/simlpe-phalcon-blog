@@ -1,6 +1,6 @@
 /**
-* Template Name: WhimsyWords
-* Template URL: https://bootstrapmade.com/WhimsyWords-bootstrap-blog-template/
+* Template Name: Byte Beat
+* Template URL: https://bootstrapmade.com/Byte Beat-bootstrap-blog-template/
 * Updated: Mar 17 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https:///bootstrapmade.com/license/
