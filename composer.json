@@ -1,0 +1,40 @@
+{
+    "name": "escribiendocodigo/phalcon-simple-project-skeleton",
+    "type": "project",
+    "description": "Phalcon simple project skeleton",
+    "keywords": [
+        "php",
+        "phalcon",
+        "project",
+        "skeleton"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "M4nu",
+            "email": "m4nu.coder@gmail.com",
+            "homepage": "https://github.com/escribiendocodigo"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/escribiendocodigo/phalcon-simple-project-skeleton/issues",
+        "source": "https://github.com/escribiendocodigo/phalcon-simple-project-skeleton"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-phalcon": "^5.0.0"
+    },
+    "require-dev": {
+        "phalcon/ide-stubs": "^5.0.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r '$dir = \"{.[!.],}*/\"; array_map(\"unlink\", glob(\"./{,$dir,$dir$dir,$dir$dir$dir}.gitkeep\", GLOB_BRACE));'"
+        ],
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S 0.0.0.0:8000 -t public"
+        ]
+    }
+}
