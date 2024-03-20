@@ -76,4 +76,20 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authProjectList',
+    [
+        'controller' => 'index',
+        'action'     => 'authProjectList',
+    ]
+);
+
+$router->add(
+    '/authTaskBoard',
+    [
+        'controller' => 'index',
+        'action'     => 'authTaskBoard',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

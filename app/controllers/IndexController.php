@@ -53,5 +53,15 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authContact');
     }
+
+    public function authProjectListAction()
+    {
+        $this->view->pick('index/authProjectList');
+    }
+
+    public function authTaskBoardAction()
+    {
+        $this->view->pick('index/authTaskBoard');
+    }
 }
 

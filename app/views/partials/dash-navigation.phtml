@@ -51,12 +51,17 @@
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authContact') ? 'class="active open"' : ''; ?>><a href="/authContact">Contacts</a></li>
                 </ul>
             </li>
-            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Projects</span></a>
+            <li <?php echo ($_SERVER['REQUEST_URI'] == '/authProjectList') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTaskBoard') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTicketList') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTicketDetail')
+                    ? 'class="active open"' : '';
+                ?>> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Projects</span></a>
                 <ul class="ml-menu">
-                    <li><a href="project-list.html">Projects List</a></li>
-                    <li><a href="taskboard.html">Taskboard</a></li>
-                    <li><a href="ticket-list.html">Ticket List</a></li>
-                    <li><a href="ticket-detail.html">Ticket Detail</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authProjectList') ? 'class="active open"' : ''; ?>><a href="/authProjectList">Projects List</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authTaskBoard') ? 'class="active open"' : ''; ?>><a href="/authTaskBoard">Taskboard</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authTicketList') ? 'class="active open"' : ''; ?>><a href="/authTicketList">Ticket List</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authTicketDetail') ? 'class="active open"' : ''; ?>><a href="authTicketDetail">Ticket Detail</a></li>
                 </ul>
             </li>
             <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-folder"></i><span>File Manager</span></a>
