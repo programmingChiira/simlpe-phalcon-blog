@@ -64,9 +64,14 @@
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authTicketDetail') ? 'class="active open"' : ''; ?>><a href="authTicketDetail">Ticket Detail</a></li>
                 </ul>
             </li>
-            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-folder"></i><span>File Manager</span></a>
+            <li <?php echo ($_SERVER['REQUEST_URI'] == '/authAllFiles') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTaskBoard') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTicketList') ||
+                    ($_SERVER['REQUEST_URI'] == '/authTicketDetail')
+                    ? 'class="active open"' : '';
+                ?>> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-folder"></i><span>File Management</span></a>
                 <ul class="ml-menu">
-                    <li><a href="file-dashboard.html">All File</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authAllFiles') ? 'class="active open"' : ''; ?>><a href="/authAllFiles">All File</a></li>
                     <li><a href="file-documents.html">Documents</a></li>
                     <li><a href="file-images.html">Images</a></li>
                     <li><a href="file-media.html">Media</a></li>

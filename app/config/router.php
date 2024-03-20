@@ -108,4 +108,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authAllFiles',
+    [
+        'controller' => 'index',
+        'action'     => 'authAllFiles',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
