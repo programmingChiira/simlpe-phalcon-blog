@@ -156,4 +156,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authBlogDetail',
+    [
+        'controller' => 'index',
+        'action'     => 'authBlogDetail',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
