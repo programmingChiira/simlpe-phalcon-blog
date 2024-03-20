@@ -180,4 +180,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authEcommerceProductDetail',
+    [
+        'controller' => 'index',
+        'action'     => 'authEcommerceProductDetail',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

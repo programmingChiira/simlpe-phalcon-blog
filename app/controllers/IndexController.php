@@ -118,5 +118,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authEcommerceProductList');
     }
+
+    public function authEcommerceProductDetailAction()
+    {
+        $this->view->pick('index/authEcommerceProductDetail');
+    }
 }
 
