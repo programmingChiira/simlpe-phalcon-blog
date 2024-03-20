@@ -25,7 +25,10 @@
                 ($_SERVER['REQUEST_URI'] == '/category') ||
                 ($_SERVER['REQUEST_URI'] == '/category')
                 ? 'id="activelink"' : '';
-              ?> href="/category"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              ?> href="/category">
+            <span>Categories</span>
+            <i class="bi bi-chevron-down dropdown-indicator"></i>
+          </a>
           <ul>
             <li><a <?php echo ($_SERVER['REQUEST_URI'] == '/category') ? 'id="activelink"' : ''; ?> href="/category">Drop Down 1</a></li>
             <li><a <?php echo ($_SERVER['REQUEST_URI'] == '/category') ? 'id="activelink"' : ''; ?> href="/category">Drop Down 2</a></li>
@@ -37,6 +40,7 @@
 
 
         <li><a <?php echo ($_SERVER['REQUEST_URI'] == '/contact') ? 'id="activelink"' : ''; ?> href="/contact">Contact</a></li>
+        <li><a href="/authDashboard">Auth Dashboard</a></li>
       </ul>
     </nav><!-- .navbar -->
 
@@ -62,4 +66,3 @@
   </div>
 
 </header>
-<!-- Navbar -->

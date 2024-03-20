@@ -44,4 +44,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authDashboard',
+    [
+        'controller' => 'index',
+        'action'     => 'authDashboard',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
