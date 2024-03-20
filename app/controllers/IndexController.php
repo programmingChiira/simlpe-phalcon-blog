@@ -68,5 +68,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authTicketList');
     }
+
+    public function authTicketDetailAction()
+    {
+        $this->view->pick('index/authTicketDetail');
+    }
 }
 

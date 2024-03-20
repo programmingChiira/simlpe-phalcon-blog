@@ -1,0 +1,208 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Project List :- Bytes</title>
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="about, company, team">
+</head>
+<?php $this->partial('partials/dash-meta'); ?>
+<?php $this->partial('partials/dash-navigation'); ?>
+
+<body class="theme-blush">
+    <section class="content">
+        <div class="body_scroll">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <h2>Ticket Detail</h2>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Aero</a></li>
+                            <li class="breadcrumb-item">Project</li>
+                            <li class="breadcrumb-item">Ticket</li>
+                            <li class="breadcrumb-item active">Detail</li>
+                        </ul>
+                        <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
+                        <button class="btn btn-success btn-icon float-right" type="button"><i class="zmdi zmdi-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mcard_4">
+                            <div class="body">
+                                <ul class="header-dropdown list-unstyled">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-menu"></i> </a>
+                                        <ul class="dropdown-menu slideUp">
+                                            <li><a href="javascript:void(0);">Edit</a></li>
+                                            <li><a href="javascript:void(0);">Delete</a></li>
+                                            <li><a href="javascript:void(0);">Report</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="img">
+                                    <img src="dashboard/assets/images/lg/avatar2.jpg" class="rounded-circle" alt="profile-image">
+                                </div>
+                                <div class="user">
+                                    <h5 class="mt-3 mb-1">Fidel Tonn</h5>
+                                    <small class="text-muted">fidel.tonn@gmail.com</small>
+                                    <ul class="list-unstyled mt-3 d-flex">
+                                        <li class="mr-3"><strong>Total:-</strong> 13</li>
+                                        <li class="mr-3"><strong>Open:-</strong> 4</li>
+                                        <li><strong>Closed:-</strong> 9</li>
+                                    </ul>
+                                    <div class="progress-container progress-success">
+                                        <span class="progress-badge">Statestics</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                <span class="progress-value">90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled social-links">
+                                    <li><a href="javascript:void(0);"><i class="zmdi zmdi-dribbble"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="zmdi zmdi-behance"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Ticket</strong> Info</h2>
+                            </div>
+                            <div class="body">
+                                <small class="text-muted">Title: </small>
+                                <p>Lucid Admin</p>
+                                <hr>
+                                <small class="text-muted">Product: </small>
+                                <p>Lucid Side Menu Open OnClick</p>
+                                <hr>
+                                <small class="text-muted">Date: </small>
+                                <p>02 Jan 2019</p>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div>In Progress</div>
+                                        <div class="progress m-b-20">
+                                            <div class="progress-bar l-amber" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%"> <span class="sr-only">32% Complete</span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <small class="text-muted">Team: </small>
+                                <ul class="list-unstyled team-info margin-0">
+                                    <li><img src="dashboard/assets/images/xs/avatar7.jpg" alt="Avatar"></li>
+                                    <li><img src="dashboard/assets/images/xs/avatar8.jpg" alt="Avatar"></li>
+                                    <li><img src="dashboard/assets/images/xs/avatar9.jpg" alt="Avatar"></li>
+                                    <li><img src="dashboard/assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                    <li><img src="dashboard/assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Ticket</strong> Statestics</h2>
+                            </div>
+                            <div class="body">
+                                <div id="chart-donut" class="c3_chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="card">
+                            <div class="body">
+                                <h5>Ticket</h5>
+                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Ticket</strong> Replies</h2>
+                            </div>
+                            <div class="body mb-2">
+                                <div class="summernote">
+                                    Hello there,
+                                </div>
+                            </div>
+                            <div class="body">
+                                <ul class="comment-reply list-unstyled">
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar2.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Kareem Todd</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar1.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Stillnot david</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.</p>
+                                            <div class="mt-4">
+                                                <p class="text-muted">Project Screenshot</p>
+                                                <img src="dashboard/assets/images/image-gallery/1.jpg" alt="" class="img-fluid img-thumbnail w200">
+                                                <img src="dashboard/assets/images/image-gallery/2.jpg" alt="" class="img-fluid img-thumbnail w200">
+                                                <img src="dashboard/assets/images/image-gallery/3.jpg" alt="" class="img-fluid img-thumbnail w200">
+                                                <img src="dashboard/assets/images/image-gallery/4.jpg" alt="" class="img-fluid img-thumbnail w200">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar3.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Kareem Todd</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years.</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar4.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Stillnot david</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar5.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Kareem Todd</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="icon-box"><img class="img-fluid img-thumbnail" src="dashboard/assets/images/sm/avatar6.jpg" alt="Awesome Image"></div>
+                                        <div class="text-box">
+                                            <h5>Stillnot david</h5>
+                                            <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                            <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

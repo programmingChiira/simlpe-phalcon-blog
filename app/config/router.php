@@ -100,4 +100,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authTicketDetail',
+    [
+        'controller' => 'index',
+        'action'     => 'authTicketDetail',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
