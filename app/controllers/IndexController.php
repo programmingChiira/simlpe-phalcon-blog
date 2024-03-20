@@ -38,5 +38,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authDashboard');
     }
+
+    public function authEmailAction()
+    {
+        $this->view->pick('index/authEmail');
+    }
 }
 

@@ -52,4 +52,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authEmail',
+    [
+        'controller' => 'index',
+        'action'     => 'authEmail',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
