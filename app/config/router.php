@@ -172,4 +172,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authEcommerceProductList',
+    [
+        'controller' => 'index',
+        'action'     => 'authEcommerceProductList',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
