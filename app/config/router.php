@@ -132,4 +132,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authBlogDashboard',
+    [
+        'controller' => 'index',
+        'action'     => 'authBlogDashboard',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

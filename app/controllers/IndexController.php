@@ -88,5 +88,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authFileImages');
     }
+
+    public function authBlogDashboardAction()
+    {
+        $this->view->pick('index/authBlogDashboard');
+    }
 }
 
