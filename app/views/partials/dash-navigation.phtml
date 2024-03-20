@@ -77,15 +77,14 @@
             </li>
             <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogDashboard') ||
                     ($_SERVER['REQUEST_URI'] == '/authBlogPost') ||
-                    ($_SERVER['REQUEST_URI'] == '/authTicketList') ||
+                    ($_SERVER['REQUEST_URI'] == '/authBlogList') ||
                     ($_SERVER['REQUEST_URI'] == '/authTicketDetail')
                     ? 'class="active open"' : '';
                 ?>> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-blogger"></i><span>Blog</span></a>
                 <ul class="ml-menu">
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogDashboard') ? 'class="active open"' : ''; ?>><a href="/authBlogDashboard">Dashboard</a></li>
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogPost') ? 'class="active open"' : ''; ?>><a href="/authBlogPost">Blog Post</a></li>
-                    <li><a href="blog-list.html">List View</a></li>
-                    <li><a href="blog-grid.html">Grid View</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogList') ? 'class="active open"' : ''; ?>><a href="/authBlogList">Blog List</a></li>
                     <li><a href="blog-details.html">Blog Details</a></li>
                 </ul>
             </li>

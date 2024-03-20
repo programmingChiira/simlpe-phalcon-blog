@@ -98,5 +98,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authBlogPost');
     }
+
+    public function authBlogListAction()
+    {
+        $this->view->pick('index/authBlogList');
+    }
 }
 

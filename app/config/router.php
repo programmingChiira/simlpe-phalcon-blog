@@ -148,4 +148,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authBlogList',
+    [
+        'controller' => 'index',
+        'action'     => 'authBlogList',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
