@@ -1,6 +1,6 @@
 /**
-* Template Name: Byte Bits
-* Template URL: https://bootstrapmade.com/Byte Bits-bootstrap-blog-template/
+* Template Name: Bytes
+* Template URL: https://bootstrapmade.com/Bytes-bootstrap-blog-template/
 * Updated: Mar 17 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https:///bootstrapmade.com/license/
