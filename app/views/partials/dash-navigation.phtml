@@ -78,7 +78,7 @@
             <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogDashboard') ||
                     ($_SERVER['REQUEST_URI'] == '/authBlogPost') ||
                     ($_SERVER['REQUEST_URI'] == '/authBlogList') ||
-                    ($_SERVER['REQUEST_URI'] == '/authTicketDetail')
+                    ($_SERVER['REQUEST_URI'] == '/authBlogDetail')
                     ? 'class="active open"' : '';
                 ?>> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-blogger"></i><span>Blog</span></a>
                 <ul class="ml-menu">
@@ -88,9 +88,14 @@
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authBlogDetail') ? 'class="active open"' : ''; ?>><a href="/authBlogDetail">Blog Details</a></li>
                 </ul>
             </li>
-            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>Ecommerce</span></a>
+            <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEcommerceDashboard') ||
+                    ($_SERVER['REQUEST_URI'] == '/authBlogPost') ||
+                    ($_SERVER['REQUEST_URI'] == '/authBlogList') ||
+                    ($_SERVER['REQUEST_URI'] == '/authBlogDetail')
+                    ? 'class="active open"' : '';
+                ?>><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>Ecommerce</span></a>
                 <ul class="ml-menu">
-                    <li><a href="ec-dashboard.html">Dashboard</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEcommerceDashboard') ? 'class="active open"' : ''; ?>><a href="/authEcommerceDashboard">Dashboard</a></li>
                     <li><a href="ec-product.html">Product</a></li>
                     <li><a href="ec-product-List.html">Product List</a></li>
                     <li><a href="ec-product-detail.html">Product detail</a></li>

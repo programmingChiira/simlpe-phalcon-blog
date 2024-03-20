@@ -164,4 +164,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authEcommerceDashboard',
+    [
+        'controller' => 'index',
+        'action'     => 'authEcommerceDashboard',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

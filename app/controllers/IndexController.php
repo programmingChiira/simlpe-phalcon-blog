@@ -108,5 +108,10 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authBlogDetail');
     }
+
+    public function authEcommerceDashboardAction()
+    {
+        $this->view->pick('index/authEcommerceDashboard');
+    }
 }
 
