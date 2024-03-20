@@ -140,4 +140,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authBlogPost',
+    [
+        'controller' => 'index',
+        'action'     => 'authBlogPost',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
