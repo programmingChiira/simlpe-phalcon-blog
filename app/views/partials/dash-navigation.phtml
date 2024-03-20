@@ -1,4 +1,22 @@
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="dashboard/assets/images/loader.svg" width="48" height="48" alt="Aero"></div>
+        <p>Please wait...</p>
+    </div>
+</div>
+
+<!-- Overlay For Sidebars -->
 <div class="overlay"></div>
+
+<!-- Main Search -->
+<div id="search">
+    <button id="close" type="button" class="close btn btn-primary btn-icon btn-icon-mini btn-round">x</button>
+    <form>
+        <input type="search" value="" placeholder="Search..." />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
 <div class="navbar-right">
     <ul class="navbar-nav">
         <li><a href="sign-in.html" class="mega-menu" title="Sign Out"><i class="zmdi zmdi-power"></i></a></li>
@@ -21,10 +39,16 @@
                     </div>
                 </div>
             </li>
-            <li class="active open"><a href="/authDashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span></a>
+            <li <?php echo ($_SERVER['REQUEST_URI'] == '/authDashboard') ? 'class="active open"' : ''; ?>><a href="/authDashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+            <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEmail') ||
+                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
+                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
+                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
+                    ($_SERVER['REQUEST_URI'] == '/authEmail')
+                    ? 'class="active open"' : '';
+                ?>><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span></a>
                 <ul class="ml-menu">
-                    <li><a href="/authEmail">Email</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEmail') ? 'class="active open"' : ''; ?>><a href="/authEmail">Email</a></li>
                     <li><a href="chat.html">Chat Apps</a></li>
                     <li><a href="events.html">Calendar</a></li>
                     <li><a href="contact.html">Contact</a></li>
