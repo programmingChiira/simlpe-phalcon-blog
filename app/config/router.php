@@ -92,4 +92,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authTicketList',
+    [
+        'controller' => 'index',
+        'action'     => 'authTicketList',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);
