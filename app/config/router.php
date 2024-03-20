@@ -60,4 +60,20 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authChat',
+    [
+        'controller' => 'index',
+        'action'     => 'authChat',
+    ]
+);
+
+$router->add(
+    '/authContact',
+    [
+        'controller' => 'index',
+        'action'     => 'authContact',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

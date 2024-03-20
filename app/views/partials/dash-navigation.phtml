@@ -41,17 +41,14 @@
             </li>
             <li <?php echo ($_SERVER['REQUEST_URI'] == '/authDashboard') ? 'class="active open"' : ''; ?>><a href="/authDashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
             <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEmail') ||
-                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
-                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
-                    ($_SERVER['REQUEST_URI'] == '/authEmail') ||
-                    ($_SERVER['REQUEST_URI'] == '/authEmail')
+                    ($_SERVER['REQUEST_URI'] == '/authChat') ||
+                    ($_SERVER['REQUEST_URI'] == '/authContact')
                     ? 'class="active open"' : '';
                 ?>><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span></a>
                 <ul class="ml-menu">
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authEmail') ? 'class="active open"' : ''; ?>><a href="/authEmail">Email</a></li>
-                    <li><a href="chat.html">Chat Apps</a></li>
-                    <li><a href="events.html">Calendar</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authChat') ? 'class="active open"' : ''; ?>><a href="/authChat">Chat App</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authContact') ? 'class="active open"' : ''; ?>><a href="/authContact">Contacts</a></li>
                 </ul>
             </li>
             <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Projects</span></a>
