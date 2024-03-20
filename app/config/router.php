@@ -116,4 +116,20 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/authFileDocuments',
+    [
+        'controller' => 'index',
+        'action'     => 'authFileDocuments',
+    ]
+);
+
+$router->add(
+    '/authFileImages',
+    [
+        'controller' => 'index',
+        'action'     => 'authFileImages',
+    ]
+);
+
 $router->handle($_SERVER['REQUEST_URI']);

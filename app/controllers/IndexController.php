@@ -78,5 +78,15 @@ class IndexController extends ControllerBase
     {
         $this->view->pick('index/authAllFiles');
     }
+
+    public function authFileDocumentsAction()
+    {
+        $this->view->pick('index/authFileDocuments');
+    }
+
+    public function authFileImagesAction()
+    {
+        $this->view->pick('index/authFileImages');
+    }
 }
 

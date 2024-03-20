@@ -65,16 +65,14 @@
                 </ul>
             </li>
             <li <?php echo ($_SERVER['REQUEST_URI'] == '/authAllFiles') ||
-                    ($_SERVER['REQUEST_URI'] == '/authTaskBoard') ||
-                    ($_SERVER['REQUEST_URI'] == '/authTicketList') ||
-                    ($_SERVER['REQUEST_URI'] == '/authTicketDetail')
+                    ($_SERVER['REQUEST_URI'] == '/authFileDocuments') ||
+                    ($_SERVER['REQUEST_URI'] == '/authFileImages')
                     ? 'class="active open"' : '';
                 ?>> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-folder"></i><span>File Management</span></a>
                 <ul class="ml-menu">
                     <li <?php echo ($_SERVER['REQUEST_URI'] == '/authAllFiles') ? 'class="active open"' : ''; ?>><a href="/authAllFiles">All File</a></li>
-                    <li><a href="file-documents.html">Documents</a></li>
-                    <li><a href="file-images.html">Images</a></li>
-                    <li><a href="file-media.html">Media</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authFileDocuments') ? 'class="active open"' : ''; ?>><a href="/authFileDocuments">Documents</a></li>
+                    <li <?php echo ($_SERVER['REQUEST_URI'] == '/authFileImages') ? 'class="active open"' : ''; ?>><a href="/authFileImages">Images</a></li>
                 </ul>
             </li>
             <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-blogger"></i><span>Blog</span></a>
